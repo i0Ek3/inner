@@ -68,4 +68,5 @@ func main() {
 
 ## Credit
 
-gopl.io.
+- gopl.io
+- @wxnacy

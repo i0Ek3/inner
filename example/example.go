@@ -1,8 +1,6 @@
 package main
 
 import (
-    "fmt"
-
     "github.com/i0Ek3/inner"
 )
 
@@ -15,7 +13,7 @@ type Item struct {
 }
 
 var (
-    yogurt := Item{
+    yogurt = Item{
         Name:    "Kight Yogurt",
         ID:      "1520012728X",
         Year:    2021,
@@ -34,12 +32,12 @@ var (
         },
     }
 
-    sausage := Item{
+    sausage = Item{
         Name:    "Italian Sausage",
         ID:      "1520012728Y",
         Year:    2021,
         Month:   12,
-        Date:    "03", // wrong fromat
+        Date:    03,
         Stocked: true,
         Where: map[string]string{
             "Product X": "CN",

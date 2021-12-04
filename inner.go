@@ -7,12 +7,6 @@ import (
     "reflect"
 )
 
-const (
-    conf = 0
-    bg   = 0
-    text = 31
-)
-
 // Inner shows x's inner structure
 func Inner(val string, x interface{}) {
     fmt.Printf(Cyan(fmt.Sprintf("[\"%s\" => %T]\n", val, x)))

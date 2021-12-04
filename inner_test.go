@@ -32,12 +32,12 @@ var (
         },
     }
 
-    /*sausage = Item{
+    sausage = Item{
         Name:    "Italian Sausage",
         ID:      "1520012728Y",
         Year:    2021,
         Month:   12,
-        Date:    "03", // wrong format
+        Date:    03,
         Stocked: true,
         Where: map[string]string{
             "Product X": "CN",
@@ -49,12 +49,12 @@ var (
             "Minneral water",
             "Edible flavor",
         },
-    }*/
+    }
 )
 
 func TestInner(t *testing.T) {
     Inner("yogurt", yogurt)
-    //Inner("sausage", sausage)
+    Inner("sausage", sausage)
 }
 
 /*
