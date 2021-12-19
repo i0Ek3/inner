@@ -74,3 +74,16 @@ func ExampleInner() {
     // yogurt.Compentent[2] = "Minneral water"
     // yogurt.Compentent[3] = "Edible flavor"
 }*/
+
+func TestAny(t *testing.T) {
+    var i Item
+    Anyln(yogurt)
+    Anyln(sausage)
+    Anyln(i.ID)
+    Anyln(i.Year)
+    Anyln(i.Where)
+    Anyln(i.Compentent)
+    Anyln(i.Stocked)
+    var ch chan int
+    Anyln(ch)
+}

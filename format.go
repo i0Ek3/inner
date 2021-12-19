@@ -1,6 +1,7 @@
 package inner
 
 import (
+    "fmt"
     "reflect"
     "strconv"
 )
@@ -10,7 +11,7 @@ func Any(x interface{}) string {
     return formatX(reflect.ValueOf(x))
 }
 
-// formatX is the unexported implementation of the Any call
+// formatX is the unexported implementation of the Any function
 func formatX(x reflect.Value) string {
     switch x.Kind() {
     case reflect.Invalid:
@@ -28,4 +29,8 @@ func formatX(x reflect.Value) string {
     default:
         return x.Type().String() + " value"
     }
+}
+
+func Anyln(x interface{}) {
+    fmt.Println(Any(x))
 }
